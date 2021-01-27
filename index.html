@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collecting_carrot_game</title>
+    <script
+      src="https://kit.fontawesome.com/579c4d8c64.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <!-- main.js doesn't work without 'defer' keyword -->
+    <script src="./src/main.js" defer></script>
+  </head>
+  <body>
+    <div id="background">
+      <img src="./img/background.png" class="bg_image" />
+    </div>
+    <section class="top_ui">
+      <div class="play_button_div">
+        <audio src="./sound/calm.mp3" id="audio"></audio>
+        <button class="play_button"><i class="fas fa-play"></i></button>
+      </div>
+      <div class="time_display">00:00</div>
+      <span class="count">0</span>
+    </section>
+
+    <ul class="play_field"></ul>
+
+    <div class="popup non_display">
+      <button class="replay_btn"><i class="fas fa-reply-all"></i></button>
+      <span></span>
+    </div>
+
+    <div class="js_toggle open_toggle">Introduction</div>
+    <div class="toggle_content swirl-out-bck non_display">
+      <header class="js_toggle header">close</header>
+      <section class="toggle_section non_display">
+        <h2>Introduction</h2>
+        <article>
+          Thanks for playing this game. Rules are really simple.
+        </article>
+        <div>■</div>
+        <article class="detail_description">
+          <span>🥇Goal: Collect all the carrots</span>
+          <span>💥Fail: Touch bugs / Time out.</span>
+          <span>Then good luck and hope you enjoy the game.🧡🤩</span>
+        </article>
+      </section>
+    </div>
+
+    <script src="./src/toggle.js"></script>
+  </body>
+</html>
